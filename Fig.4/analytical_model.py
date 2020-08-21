@@ -240,8 +240,8 @@ def energytochi(energy, L, PREFACTOR, theta=None, midpoint=None):
     
 
     def inner(e, L, theta, midpoint):
-        base  = nu2chi(0.33, L, PREFACTOR)        
-        upper  = nu2chi(0.59, L, PREFACTOR) - base
+        base  = nu2chi(0.33, L)        
+        upper  = nu2chi(0.59, L) - base
 
     
         
@@ -327,8 +327,8 @@ def chitoenergy(chi,L, PREFACTOR, theta=None, midpoint=None):
     if midpoint is None:
         midpoint = c*np.power(L,c)
 
-    base  = nu2chi(0.33,L, PREFACTOR)
-    upper  = nu2chi(0.59,L, PREFACTOR) - base
+    base  = nu2chi(0.33,L)
+    upper  = nu2chi(0.59,L) - base
         
     energy_scalar = (chi - base)/upper
 
