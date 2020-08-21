@@ -10,6 +10,7 @@ The folder contains the following .py files:
 - hidden_sensitivity_fig_s1b.py recreates Fig. S1B and writes hidden_sensitivity_fig_s1b.png to the working directory. 
 
 The .csv files contain our experimental data.
+
 The files 1a1.png, 1a2.png and 1a3.png are used for Fig. 1A.
 
 To run the programs from the spyder IPython console:
